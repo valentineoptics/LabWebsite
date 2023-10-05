@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #333;
+}
+
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+
+ol li {
+margin-bottom: 2em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0px;
+	margin-bottom:0px;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: justify;
+}
+
+h1 {
+	font-size: 18pt;
+}
+
+h1,h4,h5,h6 {
+	color: #666;
+	
+}
+
+h2 {
+	color: #99cc33;
+	font-size: 14pt;
+}
+
+h3 {
+	color: #c30;
+}
+
+a img { 
+	border: none;
+}
+
+a:link {
+	color: #c30;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #99cc33;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+
+}
+
+.container {
+	width: 980px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+.header {
+	width: 980px;
+	float: left;
+}
+
+iframe {
+	padding-left:40px;
+}
+
+.topbar1 {
+	float: left;
+	width: 980px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+
+.content {
+	
+	width: 980px;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.subcont {
+	width: 920px;
+	float: left;
+	margin-left: 40px;
+}
+
+.subconttext {
+	float:left;
+	margin-left:0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width:650px
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.subcontimg {
+	float:left;
+	max-width: 260px;
+	margin-left:5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	
+}
+
+.subcontpeople {
+	width: 880;
+	float: left;
+	margin-left: 40px;
+}
+
+.subcontpub {
+	float:left;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	width:700px;
+	padding-left: 10px;
+	padding-right:0px;
+	text-align: justify;
+}
+
+.subcontimgpub {
+	float: left;
+	width: 150px;
+	margin-bottom: 7px;
+	margin-top: 7px;
+	padding-left: 0px;
+	
+}
+
+.subcontLcol {
+	width: 390px;
+	float:left;
+}
+	
+.pubimg {
+	width: 150px;
+}
+
+.content ul {
+	list-style-type: none;
+}
+.content ol  {
+	list-style-type: decimal;
+	padding-left: 40px;
+}
+
+.subconttext ul {
+	list-style-type: disc;
+	padding-left: 40px;
+	font-size: 90%;
+}
+
+.subcont ol {
+	list-style-type: decimal;
+	padding-left: 40px;
+	margin-bottom: 10px;
+	padding-right: 40px;
+	text-align: justify;
+}
+
+.button {
+  background-color: inherit;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+}
+
+.button1 {
+	background-color: #c30;
+	color: white;
+	border-radius: 12px;
+	font-size: 20pt;
+	padding: 10px;
+}
+
+ul.nav {
+	list-style: none;
+	margin-left: 20px; 
+	font-size: 20px;
+}
+
+ul.nav li {
+	float: left;	
+}
+
+ul.nav a, ul.nav a:visited {
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	color: #FFF;
+	height: 30px;
+	padding-right: 37px;
+	padding-left: 37px;
+	background-color: #99cc33;
+	line-height: 30px;
+}
+
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	color: #666;
+	background-color: #99cc33;
+	
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #666;
+	height: 40px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
